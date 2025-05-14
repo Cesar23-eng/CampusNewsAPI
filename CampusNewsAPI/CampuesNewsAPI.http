@@ -1,0 +1,6 @@
+@CampuesNewsAPI_HostAddress = http://localhost:5228
+
+GET {{CampuesNewsAPI_HostAddress}}/weatherforecast/
+Accept: application/json
+
+###
