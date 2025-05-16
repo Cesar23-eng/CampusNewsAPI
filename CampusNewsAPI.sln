@@ -1,6 +1,6 @@
 ﻿
 Microsoft Visual Studio Solution File, Format Version 12.00
-Project("{FAE04EC0-301F-11D3-BF4B-00C04F79EFBC}") = "CampuesNewsAPI", "CampuesNewsAPI\CampuesNewsAPI.csproj", "{FC23C443-C217-4FFD-88B5-E3EDA64A2C66}"
+Project("{FAE04EC0-301F-11D3-BF4B-00C04F79EFBC}") = "CampusNewsAPI", "CampusNewsAPI\CampusNewsAPI.csproj", "{FC23C443-C217-4FFD-88B5-E3EDA64A2C66}"
 EndProject
 Global
 	GlobalSection(SolutionConfigurationPlatforms) = preSolution

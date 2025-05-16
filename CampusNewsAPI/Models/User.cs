@@ -1,10 +1,24 @@
-﻿namespace CampuesNewsAPI.Models;
+﻿using System.ComponentModel.DataAnnotations;
+using System.Text.Json.Serialization;
 
-public class user
+namespace CampusNewsAPI.Models;
+
+public enum Role { Admin = 0, User = 1 }
+
+public class User
 {
+    [Key]
     public int Id { get; set; }
-    public string Name { get; set; }
-    public string Email { get; set; }
-    public string Password { get; set; }
-    public string Role { get; set; } // "admin" or "user"
+
+    [Required, EmailAddress]
+    public string Email { get; set; } = null!;
+
+    [Required]
+    public string PasswordHash { get; set; } = null!;
+
+    [Required]
+    public Role Role { get; set; } = Role.User;
+
+    [JsonIgnore]
+    public List<Post> NewsPosts { get; set; } = new();
 }
